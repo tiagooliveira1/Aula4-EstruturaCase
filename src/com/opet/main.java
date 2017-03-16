@@ -17,6 +17,7 @@ public class main
             System.out.print("Digite o segundo numero: ");
             double segundoNumero = Reader.readDouble();
 
+
             switch (operacao) {
                 case "*":
                     System.out.println( "Multiplicação: "+(primeiroNumero * segundoNumero) );
@@ -28,7 +29,10 @@ public class main
                     System.out.println( "Subtração: "+(primeiroNumero - segundoNumero) );
                     break;
                 case "/":
-                    System.out.println( "Divisão: "+(primeiroNumero / segundoNumero) );
+                    if( (primeiroNumero == 0 ) || (segundoNumero == 0) )
+                        System.out.println( "Divisão: 0");
+                    else
+                        System.out.println( "Divisão: "+(primeiroNumero / segundoNumero) );
                     break;
             }
 
