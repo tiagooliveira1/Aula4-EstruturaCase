@@ -34,6 +34,10 @@ public class main
                     else
                         System.out.println( "Divisão: "+(primeiroNumero / segundoNumero) );
                     break;
+                default:
+                    System.out.println( "O operador não é válido!");
+                    break;
+
             }
 
         }
